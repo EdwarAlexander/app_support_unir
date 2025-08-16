@@ -2,9 +2,10 @@ import { lazy } from 'react';
 import { createBrowserRouter, Navigate } from 'react-router';
 
 import { AdminLayout } from './admin/layout/AdminLayout';
-import { HomePage } from './admin/pages/home/HomePage';
 import { Login } from './auth/page/login/Login';
 import Register from './auth/page/register/Register';
+
+import { AdminGraficaSensores, AdminIndicadoresAlerta, AdminResumenEquipo, HomePage } from './admin/pages';
 
 
 
@@ -18,6 +19,18 @@ export const appRouter = createBrowserRouter([
             {
                 index: true,
                 element: <HomePage />
+            },
+            {
+                path: 'estado-general-equipos/grafica',
+                element: <AdminGraficaSensores />
+            },
+            {
+                path: 'estado-general-equipos/indicadores',
+                element: <AdminIndicadoresAlerta />,
+            },
+            {
+                path: 'estado-general-equipos/resumenequipos',
+                element: <AdminResumenEquipo />
             }
         ]
     },
