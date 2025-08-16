@@ -5,7 +5,7 @@ import { AdminLayout } from './admin/layout/AdminLayout';
 import { Login } from './auth/page/login/Login';
 import Register from './auth/page/register/Register';
 
-import { AdminGraficaSensores, AdminIndicadoresAlerta, AdminResumenEquipo, HomePage, AdminRegistroMantenimiento } from './admin/pages';
+import { AdminGraficaSensores, AdminIndicadoresAlerta, AdminResumenEquipo, HomePage, AdminRegistroMantenimiento, AdminHistoriaMantenimiento, AdminCalendarioMantenimiento, AdminListarEquipo, AdminRegistroEquipo, AdminAdministrador, AdminSupervisor, AdminTecnico, AdminTendencia, AdminAnalisisAnomalias, AdminProyeccionEstado } from './admin/pages';
 
 
 
@@ -36,6 +36,46 @@ export const appRouter = createBrowserRouter([
             {
                 path: 'gestion-mantenimiento/registro',
                 element: <AdminRegistroMantenimiento />
+            },
+            {
+                path: 'gestion-mantenimiento/historia',
+                element: <AdminHistoriaMantenimiento />
+            },
+            {
+                path: 'gestion-mantenimiento/calendario',
+                element: <AdminCalendarioMantenimiento />
+            },
+            {
+                path: 'equipo/lista',
+                element: <AdminListarEquipo />
+            },
+            {
+                path: 'equipo/registro',
+                element: <AdminRegistroEquipo />
+            },
+            {
+                path: 'administracion/administrador',
+                element: <AdminAdministrador />
+            },
+            {
+                path: 'administracion/supervisor',
+                element: <AdminSupervisor />
+            },
+            {
+                path: 'administracion/tecnico',
+                element: <AdminTecnico />
+            },
+            {
+                path: 'analitica-predictiva/tendencia',
+                element: <AdminTendencia />
+            },
+            {
+                path: 'analitica-predictiva/analisis-anomalias',
+                element: <AdminAnalisisAnomalias />
+            },
+            {
+                path: 'analitica-predictiva/proyeccion-estado',
+                element: <AdminProyeccionEstado />
             }
         ]
     },

@@ -32,15 +32,30 @@ const items: MenuItem[] = [
   getItem('Inicio', '/', <PieChartOutlined />),
 
   getItem('Estado General', 'sub1', <UserOutlined />, [
-    getItem('Grafica de Sensores', '/estado-general-equipos/grafica'),
+    getItem('Gráfica de Sensores', '/estado-general-equipos/grafica'),
     getItem('Indicadores de Alerta', '/estado-general-equipos/indicadores'),
     getItem('Resumen de Equipos', '/estado-general-equipos/resumenequipos'),
   ]),
   getItem('Gestion Mantenimiento', 'sub2', <TeamOutlined />, [
     getItem('Registro', '/gestion-mantenimiento/registro'),
-    getItem('Equipo 2', '/team/2'),
+    getItem('Historia Mantenimiento', '/gestion-mantenimiento/historia'),
+    getItem('Calendario Mantenimiento', '/gestion-mantenimiento/calendario'),
   ]),
-  getItem('Archivos', '/files', <FileOutlined />),
+  getItem('Analitica Predictiva', 'sub3', <TeamOutlined />, [
+    getItem('Tendencia', '/analitica-predictiva/tendencia'),
+    getItem('Análisis de Anomalías', '/analitica-predictiva/analisis-anomalias'),
+    getItem('Proyección Estado', '/analitica-predictiva/proyeccion-estado'),
+  ]),
+  getItem('Equipo', 'sub4', <TeamOutlined />, [
+    getItem('Lista', '/equipo/lista'),
+    getItem('Registro', '/equipo/registro'),
+  ]),
+  getItem('Administración', 'sub5', <TeamOutlined />, [
+    getItem('Administrador', '/administracion/administrador'),
+    getItem('Supervisor', '/administracion/supervisor'),
+    getItem('Técnico', '/administracion/tecnico'),
+  ]),
+  getItem('Cerrar Sesión', '/auth', <FileOutlined />),
 ];
 
 export const AdminLayout = () => {
