@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router';
 
 import {
-  DesktopOutlined,
   FileOutlined,
   PieChartOutlined,
   TeamOutlined,
