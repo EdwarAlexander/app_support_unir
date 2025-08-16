@@ -5,7 +5,8 @@ import { AdminLayout } from './admin/layout/AdminLayout';
 import { Login } from './auth/page/login/Login';
 import Register from './auth/page/register/Register';
 
-import { AdminGraficaSensores, AdminIndicadoresAlerta, AdminResumenEquipo, HomePage } from './admin/pages';
+import { AdminGraficaSensores, AdminIndicadoresAlerta, AdminResumenEquipo, HomePage, AdminRegistroMantenimiento } from './admin/pages';
+
 
 
 
@@ -31,6 +32,10 @@ export const appRouter = createBrowserRouter([
             {
                 path: 'estado-general-equipos/resumenequipos',
                 element: <AdminResumenEquipo />
+            },
+            {
+                path: 'gestion-mantenimiento/registro',
+                element: <AdminRegistroMantenimiento />
             }
         ]
     },

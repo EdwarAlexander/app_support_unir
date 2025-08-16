@@ -5,3 +5,6 @@ export { default as AdminResumenEquipo } from './estadoGeneralEquipo/AdminResume
 
 //page home
 export { default as HomePage } from './home/HomePage';
+
+//page gestion mantenimiento
+export { default as AdminRegistroMantenimiento } from './gestionMantenimiento/AdminRegistroMantenimiento';

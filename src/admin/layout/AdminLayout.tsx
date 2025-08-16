@@ -37,8 +37,8 @@ const items: MenuItem[] = [
     getItem('Indicadores de Alerta', '/estado-general-equipos/indicadores'),
     getItem('Resumen de Equipos', '/estado-general-equipos/resumenequipos'),
   ]),
-  getItem('Equipo', 'sub2', <TeamOutlined />, [
-    getItem('Equipo 1', '/team/1'),
+  getItem('Gestion Mantenimiento', 'sub2', <TeamOutlined />, [
+    getItem('Registro', '/gestion-mantenimiento/registro'),
     getItem('Equipo 2', '/team/2'),
   ]),
   getItem('Archivos', '/files', <FileOutlined />),
