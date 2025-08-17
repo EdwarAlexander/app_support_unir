@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { Card, Descriptions, Calendar, Badge } from "antd";
 import type { Dayjs } from "dayjs";
-import dayjs from "dayjs";
 
-// Datos simulados de historial de mantenimiento (varios días con más de 3 mantenimientos)
 const historialData = [
   {
     id: 1,

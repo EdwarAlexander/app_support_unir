@@ -30,7 +30,7 @@ const responsables = [
 const AdminRegistroMantenimiento = () => {
   const [loading, setLoading] = useState(false);
 
-  const onFinish = (values: any) => {
+  const onFinish = (_: any) => {
     setLoading(true);
     // Simula registro
     setTimeout(() => {

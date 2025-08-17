@@ -4,13 +4,11 @@ import { Outlet, useLocation, useNavigate } from 'react-router';
 import {
   ClusterOutlined,
   DesktopOutlined,
-  FileOutlined,
   FundViewOutlined,
   LoginOutlined,
   PieChartOutlined,
   TeamOutlined,
   ToolOutlined,
-  UserOutlined,
 } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
