@@ -6,7 +6,7 @@ export const Login = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   
-  const onFinish = (values: any) => {
+  const onFinish = (_: any) => {
     setLoading(true);
     // Aquí va la lógica de autenticación
     setTimeout(() => {

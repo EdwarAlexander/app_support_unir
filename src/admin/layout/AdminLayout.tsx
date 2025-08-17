@@ -2,9 +2,14 @@ import { useState } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router';
 
 import {
+  ClusterOutlined,
+  DesktopOutlined,
   FileOutlined,
+  FundViewOutlined,
+  LoginOutlined,
   PieChartOutlined,
   TeamOutlined,
+  ToolOutlined,
   UserOutlined,
 } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
@@ -31,22 +36,22 @@ function getItem(
 const items: MenuItem[] = [
   getItem('Inicio', '/', <PieChartOutlined />),
 
-  getItem('Estado General', 'sub1', <UserOutlined />, [
+  getItem('Estado General', 'sub1', <ClusterOutlined />, [
     getItem('Gráfica de Sensores', '/estado-general-equipos/grafica'),
     getItem('Indicadores de Alerta', '/estado-general-equipos/indicadores'),
     getItem('Resumen de Equipos', '/estado-general-equipos/resumenequipos'),
   ]),
-  getItem('Gestion Mantenimiento', 'sub2', <TeamOutlined />, [
+  getItem('Gestion Mantenimiento', 'sub2', <DesktopOutlined />, [
     getItem('Registro', '/gestion-mantenimiento/registro'),
     getItem('Historia Mantenimiento', '/gestion-mantenimiento/historia'),
     getItem('Calendario Mantenimiento', '/gestion-mantenimiento/calendario'),
   ]),
-  getItem('Analitica Predictiva', 'sub3', <TeamOutlined />, [
+  getItem('Analitica Predictiva', 'sub3', <FundViewOutlined />, [
     getItem('Tendencia', '/analitica-predictiva/tendencia'),
     getItem('Análisis de Anomalías', '/analitica-predictiva/analisis-anomalias'),
     getItem('Proyección Estado', '/analitica-predictiva/proyeccion-estado'),
   ]),
-  getItem('Equipo', 'sub4', <TeamOutlined />, [
+  getItem('Equipo', 'sub4', <ToolOutlined />, [
     getItem('Lista', '/equipo/lista'),
     getItem('Registro', '/equipo/registro'),
   ]),
@@ -55,7 +60,7 @@ const items: MenuItem[] = [
     getItem('Supervisor', '/administracion/supervisor'),
     getItem('Técnico', '/administracion/tecnico'),
   ]),
-  getItem('Cerrar Sesión', '/auth', <FileOutlined />),
+  getItem('Cerrar Sesión', '/auth', <LoginOutlined />),
 ];
 
 export const AdminLayout = () => {

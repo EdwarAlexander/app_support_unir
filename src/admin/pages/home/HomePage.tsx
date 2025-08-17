@@ -50,7 +50,7 @@ const HomePage = () => {
                   outerRadius={80}
                   label
                 >
-                  {mantenimientoData.map((entry, index) => (
+                  {mantenimientoData.map((_, index) => (
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                   ))}
                 </Pie>
